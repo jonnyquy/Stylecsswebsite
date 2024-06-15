@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 2px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 5px 0;
+  font-size: 18px;
+  min-width: 600px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+
+}
+th, td {
+  border: 1px solid #dddddd;
+  padding: 10px 5px;
+  text-align: center;
+  color: #000000;
+  vertical-align: top;
+}
+th {
+  background-color: gold;
+  font-weight: bold;
+
+}
+td {
+  border-width: 1px;
+  padding: 2px; /* Giảm padding để giảm chiều cao của hàng */
+  color: #000000;
+
+
+}
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+tr:hover {
+  background-color: #f1f1f1;
+}
+.btnGoiXe {
+  width: 100px;
+  padding: 10px 20px;
+  background-color: gold;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+}
+.btnGoiXe:hover {
+  background-color: #218838;
+}
+.type-col{
+  width: 25%;
+}
+.price-col {
+  width: 30%;
+}
+.img-col {
+  width: 20%;
+}
+.btn-col {
+  width: 25%;
+}		
+img {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto;    
+}
+@media (max-width: 600px) { /* Điều chỉnh cho các thiết bị di động nhỏ hơn */
+  table {
+    min-width: auto; /* Bỏ điều kiện tối thiểu */
+    font-size: 11px; /* Giảm font-size để phù hợp với thiết bị nhỏ hơn */
+  }  
+.type-col, .price-col, .img-col, .btnGoiXe {
+  width: auto; /* Cho phép các cột co dãn tự nhiên */
+}
+.btnGoiXe {
+  font-size: 9px;
+  padding: 8px 16px; /* Thay đổi kích thước button cho thiết bị nhỏ hơn */
+}
